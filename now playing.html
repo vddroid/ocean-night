@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+   <!--<![endif]-->
+
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title></title>
+      <meta name="description" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="https://kit.fontawesome.com/8ee1924488.js"></script>
+      <link
+         href="https://fonts.googleapis.com/css?family=Carter One|Sonsie One|Lato|Montserrat|Raleway|Roboto&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" type="text/css" href="now playing.css" />
+   </head>
+
+   <body>
+      <!--[if lt IE 7]>
+         <p class="browsehappy">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="#">upgrade your browser</a> to improve your experience.
+         </p>
+      <![endif]-->
+      <div id="wrapper">
+         <!-- Header, Logo, Nav, Social Login, Main text -->
+         <header>
+            <span id="home"></span>
+            <nav class="menu">
+               <div class="logo">
+                  <a class="neon" href="index.html">OCEAN NIGHT</a>
+               </div
+
+               <!-- Menu bar icon for phones -->
+               <div class="menu_group js_menu_group">
+                  <span class="menu_icon"
+                     ><a href="#"> <i class="fas fa-3x fa-bars"></i></a
+                  ></span>
+               </div>
+
+               <!-- Menu small for phones-->
+               <ul class="menu_item_small js_menu_item_small">
+                  <div class="login_nav">
+                     <span class="login_account_small"
+                        ><a href="#">
+                           <i class="fas fa-3x fa-user-circle"></i></a
+                     ></span>
+                     <span class="login_dropdown_small"
+                        ><a href="#">
+                           <i class="fas fa-3x fa-chevron-down"></i></a
+                     ></span>
+                     <span class="close_btn js_close_btn"
+                        ><a href="#">
+                           <i class="fas fa-3x fa-times-circle"></i></a
+                     ></span>
+                  </div>
+
+                  <li class="menu_sub_item">
+                     <a href="index.html">Home</a>
+                  </li>
+                  <li class="menu_sub_item">
+                     <a href="now playing.html">Now Playing</a>
+                  </li>
+                  <li class="menu_sub_item">
+                     <a ki href="snack bar.html">Snack Bar</a>
+                  </li>
+                  <li class="menu_sub_item">
+                     <a href="contact us.html">Contact</a>
+                  </li>
+
+                  <div class="social_nav">
+                     <a href="#">
+                        <i class="fab fa-4x fa-facebook-square"></i
+                     ></a>
+
+                     <a href="#">
+                        <i class="fab fa-4x fa-instagram-square"></i
+                     ></a>
+
+                     <a href="#">
+                        <i class="fab fa-4x fa-twitter-square"></i
+                     ></a>
+                  </div>
+               </ul>
+
+               <!-- Menu big for laptop/pc-->
+               <ul class="menu_item_big">
+                  <li class="menu_item_big_item">
+                     <a href="index.html">Home</a>
+                  </li>
+                  <li class="menu_item_big_item">
+                     <a id="page_active">Now Playing</a>
+                  </li>
+                  <li class="menu_item_big_item">
+                     <a href="snack bar.html">Snack Bar</a>
+                  </li>
+                  <li class="menu_item_big_item">
+                     <a href="contact us.html">Contact</a>
+                  </li>
+               </ul>
+            </nav>
+         </header>
+
+         <!-- Account and login big devices -->
+         <section class="social_login_big">
+            <div class="social_login_group">
+               <div class="social">
+                  <span class="social_icon"
+                     ><a href="#">
+                        <i class="fab fa-3x fa-facebook-square"></i></a
+                  ></span>
+                  <span class="social_icon"
+                     ><a href="#">
+                        <i class="fab fa-3x fa-instagram-square"></i></a
+                  ></span>
+                  <span class="social_icon"
+                     ><a href="#">
+                        <i class="fab fa-3x fa-twitter-square"></i></a
+                  ></span>
+               </div>
+               <div class="login">
+                  <span class="login_account_big"
+                     ><a href="#"> <i class="fas fa-3x fa-user-circle"></i></a
+                  ></span>
+                  <span class="login_dropdown_big"
+                     ><a href="#"> <i class="fas fa-3x fa-chevron-down"></i></a
+                  ></span>
+               </div>
+            </div>
+         </section>
+
+         <h1 class="now_playing_text">Now Playing</h1>
+
+         <!-- Main section -->
+         <main class="main">
+            <!-- Showtimes and prices -->
+            <section class="showtimes-prices">
+               <div class="showtimes">
+                  <div class="showtimes_c">
+                     <h3 class="showtimes_text">Showtimes</h3>
+                     <div class="showtime_text_1st">12pm</div>
+                     <div class="showtime_text_2nd">7pm</div>
+                  </div>
+               </div>
+               <div id="showtimes_prices_breakline"></div>
+               <div class="prices">
+                  <div class="prices_c">
+                     <h3 class="prices_text">Prices</h3>
+                     <div class="prices_general">General Admissions: $12</div>
+                     <div class="prices_children">
+                        Children 5-11 years old: $3.50
+                     </div>
+                     <div class="prices_under">Under 5 years old: Free</div>
+                  </div>
+               </div>
+            </section>
+
+            <!-- Movies showtimes weekly list -->
+            <section class="showtimes-weekly">
+               <div class="weekly_list">
+                  <ul class="list_item">
+                     <li class="item_date_days">
+                        <h1 class="date_text">12</h1>
+                        <div class="item_day_month">
+                           <h3 class="day_text">Wed</h3>
+                           <h3 class="month_text">Jul</h3>
+                        </div>
+                     </li>
+                     <li class="title_time_group">
+                        <div class="title_time">
+                           <h2 class="title_text">Avenger - 2pm</h2>
+                           <div class="showtime_group_small">
+                              <h2 class="showtime_text">Showtime</h2>
+                              <a href="#">
+                                 <i class="fas fa-3x fa-chevron-down"></i
+                              ></a>
+                           </div>
+                           <div class="showtime_group_big">
+                              <h2 class="showtime_text">
+                                 Showtime / Ocean Drive-In
+                              </h2>
+                           </div>
+                        </div>
+                     </li>
+                     <button class="buy_tickets_weekly">
+                        <a href="#">Buy Tickets</a>
+                     </button>
+                  </ul>
+
+                  <ul class="list_item">
+                     <li class="item_date_days">
+                        <h1 class="date_text">12</h1>
+                        <div class="item_day_month">
+                           <h3 class="day_text">Wed</h3>
+                           <h3 class="month_text">Jul</h3>
+                        </div>
+                     </li>
+                     <li class="title_time_group">
+                        <div class="title_time">
+                           <h2 class="title_text">Avenger - 7pm</h2>
+                           <div class="showtime_group_small">
+                              <h2 class="showtime_text">Showtime</h2>
+                              <a href="#">
+                                 <i class="fas fa-3x fa-chevron-down"></i
+                              ></a>
+                           </div>
+                           <div class="showtime_group_big">
+                              <h2 class="showtime_text">
+                                 Showtime / Ocean Drive-In
+                              </h2>
+                           </div>
+                        </div>
+                     </li>
+                     <button class="buy_tickets_weekly">
+                        <a href="#">Buy Tickets</a>
+                     </button>
+                  </ul>
+
+                  <ul class="list_item">
+                     <li class="item_date_days">
+                        <h1 class="date_text">13</h1>
+                        <div class="item_day_month">
+                           <h3 class="day_text">Thur</h3>
+                           <h3 class="month_text">Jul</h3>
+                        </div>
+                     </li>
+                     <li class="title_time_group">
+                        <div class="title_time">
+                           <h2 class="title_text">Wonder Woman - 12pm</h2>
+                           <div class="showtime_group_small">
+                              <h2 class="showtime_text">Showtime</h2>
+                              <a href="#">
+                                 <i class="fas fa-3x fa-chevron-down"></i
+                              ></a>
+                           </div>
+                           <div class="showtime_group_big">
+                              <h2 class="showtime_text">
+                                 Showtime / Ocean Drive-In
+                              </h2>
+                           </div>
+                        </div>
+                     </li>
+                     <button class="buy_tickets_weekly">
+                        <a href="#">Buy Tickets</a>
+                     </button>
+                  </ul>
+
+                  <ul class="list_item">
+                     <li class="item_date_days">
+                        <h1 class="date_text">13</h1>
+                        <div class="item_day_month">
+                           <h3 class="day_text">Thur</h3>
+                           <h3 class="month_text">Jul</h3>
+                        </div>
+                     </li>
+                     <li class="title_time_group">
+                        <div class="title_time">
+                           <h2 class="title_text">Wonder Woman - 5pm</h2>
+                           <div class="showtime_group_small">
+                              <h2 class="showtime_text">Showtime</h2>
+                              <a href="#">
+                                 <i class="fas fa-3x fa-chevron-down"></i
+                              ></a>
+                           </div>
+                           <div class="showtime_group_big">
+                              <h2 class="showtime_text">
+                                 Showtime / Ocean Drive-In
+                              </h2>
+                           </div>
+                        </div>
+                     </li>
+                     <button class="buy_tickets_weekly">
+                        <a href="#">Buy Tickets</a>
+                     </button>
+                  </ul>
+
+                  <ul class="list_item">
+                     <li class="item_date_days">
+                        <h1 class="date_text">14</h1>
+                        <div class="item_day_month">
+                           <h3 class="day_text">Fri</h3>
+                           <h3 class="month_text">Jul</h3>
+                        </div>
+                     </li>
+                     <li class="title_time_group">
+                        <div class="title_time">
+                           <h2 class="title_text">Captain Marvel - 2pm</h2>
+                           <div class="showtime_group_small">
+                              <h2 class="showtime_text">Showtime</h2>
+                              <a href="#">
+                                 <i class="fas fa-3x fa-chevron-down"></i
+                              ></a>
+                           </div>
+                           <div class="showtime_group_big">
+                              <h2 class="showtime_text">
+                                 Showtime / Ocean Drive-In
+                              </h2>
+                           </div>
+                        </div>
+                     </li>
+                     <button class="buy_tickets_weekly">
+                        <a href="#">Buy Tickets</a>
+                     </button>
+                  </ul>
+
+                  <ul class="list_item">
+                     <li class="item_date_days">
+                        <h1 class="date_text">14</h1>
+                        <div class="item_day_month">
+                           <h3 class="day_text">Fri</h3>
+                           <h3 class="month_text">Jul</h3>
+                        </div>
+                     </li>
+                     <li class="title_time_group">
+                        <div class="title_time">
+                           <h2 class="title_text">Captain Marvel - 7pm</h2>
+                           <div class="showtime_group_small">
+                              <h2 class="showtime_text">Showtime</h2>
+                              <a href="#">
+                                 <i class="fas fa-3x fa-chevron-down"></i
+                              ></a>
+                           </div>
+                           <div class="showtime_group_big">
+                              <h2 class="showtime_text">
+                                 Showtime / Ocean Drive-In
+                              </h2>
+                           </div>
+                        </div>
+                     </li>
+                     <button class="buy_tickets_weekly">
+                        <a href="#">Buy Tickets</a>
+                     </button>
+                  </ul>
+               </div>
+            </section>
+         </main>
+      </div>
+
+      <!-- Footer, Menu Contact, Buy tickets, Copyright -->
+      <footer class="footer_info">
+         <div class="footer_info_group">
+            <div class="oceandrive_footer">
+               <h1 class="oceandrive_heading_bottom">Ocean Night Drive-In</h1>
+               <p class="oceandrive_para">
+                  I'm a paragraph. Click here to add your own text and edit me.
+                  Let your users get to know you.
+               </p>
+
+               <!-- Buy ticket button for phones -->
+               <button class="buy_tickets_bottom_btn_one">
+                  <a href="#">Buy Tickets</a>
+               </button>
+            </div>
+
+            <!-- Quick menu and contacts -->
+            <div class="menu_contact">
+               <div class="quick_menu">
+                  <h2 class="quick_menu_heading">Quick Menu</h2>
+                  <ul class="quick_menu_list">
+                     <li class="quick_menu_list_item">
+                        <a href="index.html">Home</a>
+                     </li>
+                     <li class="quick_menu_list_item">
+                        <a href="now playing.html">Now Playing</a>
+                     </li>
+                     <li class="quick_menu_list_item">
+                        <a href="snack bar.html">Snack Bar</a>
+                     </li>
+                     <li class="quick_menu_list_item">
+                        <a href="contact us.html">Contact </a>
+                     </li>
+                  </ul>
+               </div>
+
+               <span id="contact_detail"></span>
+               <div class="contact_bottom">
+                  <h2 class="contact_bottom_heading">Contact</h2>
+                  <ul class="contact_bottom_list">
+                     <li class="contact_bottom_item">
+                        500 Terry Francois Street
+                     </li>
+                     <li class="contact_bottom_item">
+                        San Francisco, CA 94158
+                     </li>
+                     <li class="contact_bottom_item">info@mysite.com</li>
+                     <li class="contact_bottom_item">Tel: 123-456-7890</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="buy_tickets_bottom">
+               <!-- Buy ticket button for laptop/pc -->
+               <button class="buy_tickets_bottom_btn_two">
+                  <a href="#" class="buy_tickets_bottom_btn_two_text"
+                     >Buy Tickets</a
+                  >
+               </button>
+
+               <div class="social_icons_bottom">
+                  <a href="#"> <i class="fab fa-4x fa-facebook-square"></i></a>
+                  <a href="#"> <i class="fab fa-4x fa-instagram-square"></i></a>
+                  <a href="#"> <i class="fab fa-4x fa-twitter-square"></i></a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Copyright section -->
+         <div class="copyright">
+            <p class="copyright_text">
+               © 2023 by Ocean Night Drive-In. Proudly created by Vinni
+            </p>
+         </div>
+      </footer>
+
+      <!-- Go to top button -->
+      <button id="js_top_btn" title="Go to top">Top</button>
+
+      <script src="Drive-In Movie Theater.js"></script>
+   </body>
+</html>

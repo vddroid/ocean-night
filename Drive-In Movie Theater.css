@@ -1,0 +1,1278 @@
+/* * {
+   background-color: rgba(255, 0, 0, 0.2);
+}
+
+* * {
+   background-color: rgba(0, 255, 0, 0.2);
+}
+
+* * * {
+   background-color: rgba(0, 0, 255, 0.2);
+}
+
+* * * * {
+   background-color: rgba(255, 0, 255, 0.2);
+}
+
+* * * * * {
+   background-color: rgba(0, 255, 255, 0.2);
+}
+
+* * * * * * {
+   background-color: rgba(255, 255, 0, 0.2);
+}
+
+* * * * * * * {
+   background-color: rgba(255, 0, 0, 0.2);
+}
+
+* * * * * * * * {
+   background-color: rgba(0, 255, 0, 0.2);
+}
+
+* * * * * * * * * {
+   background-color: rgba(0, 0, 255, 0.2);
+} */
+
+/*-----------------------------------------------------------------------------
+[client] Screen Stylesheet
+version:   1.0
+date:      01/03/07
+author:    Vinni
+email:     [you at domain dot com]
+website:   [your domain]
+version history: [location of file]
+-----------------------------------------------------------------------------*/
+
+/* Remove padding and margin */
+
+* {
+   font-size: 10px;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Montserrat, Roboto, Lato, Carter One, Sonsie One, Tahoma,
+      sans-serif;
+}
+
+@font-face {
+   font-family: neon;
+   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+:root {
+   --main-logo-font: Sonsie One;
+   --movies-title-font: Carter One;
+   --primary-bg-color: #313cb8;
+   --secondary-bg-color: rgb(17, 17, 90);
+}
+
+.clear {
+   clear: both;
+}
+
+.right {
+   float: right;
+}
+
+.left {
+   float: left;
+}
+
+body {
+   font: 62.5%/1.5 Montserrat, Roboto, Lato, Tahoma, sans-serif;
+   color: #000000;
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      var(--image-url);
+   background-size: 100% 40%;
+}
+
+h1 {
+   font-size: 2.4rem;
+}
+
+h2 {
+   font-size: 2.2rem;
+}
+
+h3 {
+   font-size: 2rem;
+}
+
+h4 {
+   font-size: 1.8rem;
+}
+
+h5 {
+   font-size: 1.6rem;
+}
+
+p {
+   font-size: 1.4rem;
+}
+
+ul,
+li {
+   text-decoration: none;
+   list-style: none;
+}
+
+/* <!-- social_login_big, Logo, Nav, Social Login, Main text --> */
+
+html,
+body {
+   width: 100%;
+}
+
+#wrapper {
+   max-width: 90%;
+   margin: auto;
+   color: white;
+}
+
+.menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 10vh;
+   border-bottom: solid white 1px;
+}
+
+/* <!-- Menu small for phones--> */
+
+.menu_item_small {
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(17, 17, 90);
+   box-shadow: black 2px 2px 3px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* <!-- Menu big for laptop/pc--> */
+
+.menu_item_big {
+   display: none;
+}
+
+.menu_item_big_item a:hover {
+   text-shadow: white 0px 0px 1px;
+   border-bottom: solid white 2px;
+}
+
+.menu_sub_item {
+   padding: 2rem;
+   text-align: center;
+}
+
+.menu_sub_item_text a {
+   color: white;
+}
+
+.menu_sub_item a:hover {
+   text-shadow: white 0px 0px 1px;
+   border-bottom: solid white 2px;
+}
+
+.menu_sub_item:last-child {
+   border-bottom: none;
+}
+
+.menu_sub_item a {
+   text-decoration: none;
+   font-size: calc(3.2rem + 0.1vw);
+   color: white;
+   font-weight: bold;
+}
+
+.social_nav {
+   margin-top: 4rem;
+}
+
+.close_btn {
+   position: fixed;
+   right: 5%;
+   top: 3%;
+}
+
+.logo .neon {
+   font-family: neon;
+   color: fuchsia;
+   font-size: calc(3.5rem + 1vw);
+   text-shadow: 0 0 3vw #f40a35;
+   text-decoration: none;
+}
+
+.neon {
+   animation: neon 1.5s ease infinite;
+   -moz-animation: neon 1.5s ease infinite;
+   -webkit-animation: neon 1.5s ease infinite;
+}
+
+@keyframes neon {
+   0%,
+   100% {
+      text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+         0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw rgb(143, 0, 143);
+      color: fuchsia;
+   }
+   50% {
+      text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
+         0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
+      color: rgb(143, 0, 143);
+   }
+}
+
+.fa-bars,
+.fa-user-circle,
+.fa-chevron-down,
+.fa-times-circle {
+   color: white;
+}
+
+/* <!-- Account and login for phone--> */
+
+.social_login_group {
+   height: 7vh;
+   display: none;
+   justify-content: space-between;
+   align-items: center;
+   font-size: calc(1.5rem + 0.1vw);
+   color: white;
+}
+
+.login_account_small,
+.login_dropdown_small {
+   font-size: calc(1.5rem + 0.1vw);
+   color: white;
+}
+
+.login_account_small {
+   position: absolute;
+   top: 3%;
+   left: 5%;
+}
+
+.login_dropdown_small {
+   position: absolute;
+   top: 3%;
+   left: 18%;
+}
+
+.social_nav a i,
+.login_account_small a,
+.login_dropdown_small {
+   color: white;
+}
+
+.social_nav a {
+   display: inline-block;
+   margin: 1rem;
+   color: white;
+}
+
+.main_text {
+   height: 83vh;
+   margin-top: 6rem;
+}
+
+.main_heading {
+   max-width: 100%;
+   font-size: calc(3.5rem + 1vw);
+   color: white;
+   font-weight: 900;
+   padding-top: 10rem;
+   text-shadow: pink 0px 0px 5px;
+   text-align: center;
+   font-family: Carter One;
+}
+
+.main_description {
+   color: white;
+   font-size: calc(1.3rem + 1vw);
+   text-align: justify;
+   margin: 5rem 0;
+   text-align: center;
+}
+
+.buy_tickets {
+   display: block;
+   margin: 7rem auto;
+   border: none;
+   padding: 2rem 0;
+   background-color: fuchsia;
+   border: solid white 1px;
+}
+
+.buy_tickets:hover {
+   outline: solid white 2px;
+}
+
+.buy_tickets a {
+   text-decoration: none;
+   color: white;
+   padding: 2rem;
+   font-size: 2rem;
+   background-color: fuchsia;
+}
+
+/* <!-- Main body, Now playing, Comming Soon, How it Works, Ticket Prices, Snacks, Stay Update --> */
+
+main {
+   background-color: var(--primary-bg-color);
+}
+
+/* <!-- Now playing section --> */
+
+.now_playing {
+   max-width: 90%;
+   margin: auto;
+   background-color: var(--primary-bg-color);
+}
+
+.now_playing_text {
+   height: 9rem;
+   line-height: 9vh;
+   border-bottom: solid white 1px;
+   color: white;
+   font-weight: 700;
+}
+
+.movie_poster {
+   display: flex;
+   flex-flow: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.movie_poster_item {
+   margin: 2rem 0;
+   width: 48%;
+}
+
+.movie_poster_img:hover {
+   outline: solid fuchsia 2px;
+}
+
+.movie_poster_item:first-child {
+   margin-left: 0;
+}
+
+.movie_poster_item:last-child {
+   margin-right: 0;
+}
+
+.movie_poster_img img {
+   max-height: 80vh;
+   width: auto;
+   max-width: 100%;
+   transition: 0.5s;
+}
+
+.movie_poster_heading {
+   font-weight: 700;
+   font-size: calc(1.3rem + 1vw);
+   margin-top: 1rem;
+   color: white;
+   font-family: var(--movies-title-font);
+}
+
+.movie_poster_genre {
+   font-size: calc(1.2rem + 1vw);
+   color: thistle;
+}
+
+.showtimes {
+   background-color: fuchsia;
+   width: 250px;
+   text-align: center;
+   margin: 2rem auto 2rem;
+   border: solid white 1px;
+}
+
+.showtimes:hover {
+   outline: solid white 2px;
+}
+
+.showtimes a {
+   display: block;
+   color: white;
+   width: 250px;
+   padding: 1.5rem;
+   font-size: 2rem;
+   text-decoration: none;
+}
+
+/* <!-- Coming Soon and Trailers --> */
+
+.coming_soon_text {
+   height: 11rem;
+   line-height: 14rem;
+   color: white;
+   font-weight: 700;
+}
+
+.fa-play-circle {
+   color: fuchsia;
+}
+
+.coming_soon_subitem {
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   border: solid white 1px;
+   color: white;
+   padding: 3rem 1rem;
+}
+
+.coming_soon_genre {
+   background-color: rgb(61, 26, 141);
+   color: rgb(253, 71, 214);
+   border-radius: 10px;
+   padding: 1rem;
+   font-size: calc(1.6rem + 0.5vw);
+   margin: 2rem 0 1rem;
+}
+
+.coming_soon_title {
+   text-align: center;
+   font-size: calc(2.5rem + 0.5vw);
+   padding: 1rem;
+   font-family: var(--movies-title-font);
+}
+
+.coming_soon_trailer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   font-size: calc(1.2rem + 0.5vw);
+   color: white;
+}
+
+.trailer_text:hover {
+   color: fuchsia;
+}
+
+.trailer_text {
+   padding: 1rem;
+   font-size: calc(1.8rem + 0.5vw);
+   color: white;
+   text-align: center;
+}
+
+/* <!-- How it works section --> */
+
+.how_it_works {
+   margin-top: 5rem;
+   background-color: var(--secondary-bg-color);
+}
+
+.hiw_text {
+   height: 150px;
+   width: 90%;
+   color: white;
+   font-size: 3rem;
+   text-align: center;
+   margin: auto;
+   line-height: 150px;
+   font-weight: 900;
+}
+
+.steps_heading {
+   font-size: 4rem;
+   color: rgb(242, 143, 255);
+   font-family: var(--movies-title-font);
+}
+
+.dash_cirle {
+   margin: 2rem 0;
+}
+
+.dash_cirle_item {
+   height: 70px;
+   width: 100%;
+   margin-top: -2.5rem;
+}
+
+.steps {
+   display: flex;
+   color: white;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.step_card {
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   width: calc(100% / 2);
+}
+
+.step_card:nth-child(3),
+.step_card:nth-child(4) {
+   margin-top: 2rem;
+}
+
+.step_img {
+   max-height: calc(90px + 3vw);
+   max-width: calc(90px + 3vw);
+}
+
+.step_card_heading {
+   margin-top: 2.5rem;
+   font-size: calc(1.8rem + 0.5vw);
+   padding: 0.8rem;
+   font-weight: 900;
+   text-align: center;
+   font-family: var(--movies-title-font);
+}
+
+.step_card_text {
+   font-size: calc(1.4rem + 0.3vw);
+   padding: 1.5rem;
+   text-align: center;
+}
+
+/* <!-- Ticket Prices --> */
+
+.ticket_price {
+   background-color: var(--secondary-bg-color);
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   padding-top: 15rem;
+   width: 100%;
+}
+
+.ticket_price_group {
+   max-width: 99%;
+}
+
+.ticket_price_text {
+   height: 120px;
+   font-size: calc(2.2rem + 0.7vw);
+   text-align: center;
+   line-height: 120px;
+   font-weight: 700;
+   background-color: rgb(215, 0, 235);
+}
+
+.ticket_price_heading {
+   width: 100%;
+   background-color: rgb(215, 0, 235);
+}
+
+.dash_line_top,
+.dash_line_bottom {
+   height: auto;
+   width: 90%;
+   border-bottom: dashed black 3px;
+   margin: auto;
+}
+
+.group_age {
+   width: 100%;
+   background-color: rgb(215, 0, 235);
+}
+
+.ticket_price_heading,
+.prices,
+.ticket_torn {
+   background-color: rgb(215, 0, 235);
+   color: black;
+}
+
+.ages_price {
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(215, 0, 235);
+   margin: auto;
+}
+
+.ages_price_1st,
+.ages_price_2nd,
+.ages_price_3rd {
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+   align-items: center;
+   margin-top: 2rem;
+}
+
+.ages_price_1st {
+   margin-top: 0;
+}
+
+.ages_price_3rd {
+   margin-bottom: 1rem;
+}
+
+.admissions,
+.children,
+.under_five {
+   height: 120px;
+   font-size: calc(2.9rem + 0.7vw);
+   text-align: center;
+   padding: 1rem 2rem;
+   display: flex;
+   align-items: center;
+   font-weight: 600;
+   font-family: var(--movies-title-font);
+}
+
+.price_1st,
+.price_2nd,
+.price_3rd {
+   font-size: 5.5rem;
+   font-weight: 900;
+   margin-top: -3rem;
+   font-family: var(--movies-title-font);
+}
+
+#Layer_2 {
+   height: auto;
+   width: 100%;
+   fill: rgb(215, 0, 235);
+}
+
+/* <!-- Snacks and drinks --> */
+
+.snacks_drinks {
+   background-color: var(--primary-bg-color);
+   margin: -5rem auto;
+   height: calc(600px + 10vw);
+}
+
+.snacks_drinks_group {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   text-align: center;
+   color: white;
+   background-color: #1656df;
+   height: calc(600px + 10vw);
+}
+
+.snacks,
+.drinks {
+   width: 45%;
+}
+
+.cone_img {
+   display: none;
+   max-height: calc(250px + 20vh);
+   width: auto;
+   max-width: 100%;
+   margin-top: calc(-3rem + 10vw);
+}
+
+.snacks_group {
+   margin-top: 2rem;
+}
+
+.snacks_drinks_heading {
+   font-size: calc(1.9rem + 0.8vw);
+   margin-bottom: 2rem;
+}
+
+.snacks_drinks_dashed {
+   height: auto;
+   border-bottom: dashed white 3px;
+   margin: auto;
+   width: 90%;
+}
+
+.snacks_drinks_item {
+   font-size: calc(2.3rem + 1.3vw);
+   font-weight: 900;
+   padding: 0.5rem 0;
+}
+
+.all_snacks {
+   background-color: #1656df;
+   border: none;
+}
+
+.view_all_snacks_text {
+   font-size: calc(1.5rem + 0.5vw);
+   text-decoration: none;
+   color: fuchsia;
+   padding: 2rem;
+   margin-top: 3rem;
+   background-color: #1656df;
+   border: solid white 1px;
+   display: block;
+}
+
+.view_all_snacks_text:hover {
+   outline: solid white 2px;
+}
+
+.snacks,
+.icecream_img,
+.drinks {
+   margin-top: 7rem;
+}
+
+/* <!-- Stay update for users --> */
+
+.stay_update {
+   width: 100%;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0rem auto 0;
+   color: white;
+}
+
+.stay_update_heading {
+   margin: 15rem 0 2rem;
+   font-size: 3rem;
+}
+
+.stay_update_para {
+   width: 80%;
+   text-align: center;
+   font-size: 1.7rem;
+}
+
+.submit {
+   display: flex;
+   flex-flow: column;
+   width: inherit;
+   color: fuchsia;
+   margin-top: 3rem;
+}
+
+.email {
+   width: 80%;
+   padding: 3rem 0;
+   font-size: 2.5rem;
+   margin: 2rem auto 1rem;
+   text-align: center;
+   color: fuchsia;
+   border: solid fuchsia 1px;
+}
+
+.email {
+   margin-bottom: -1rem;
+   background-color: var(--secondary-bg-color);
+}
+
+::placeholder {
+   color: fuchsia;
+   opacity: 1;
+   /* Firefox */
+   font-weight: 900;
+   font-family: var(--movies-title-font);
+}
+
+.btn_join {
+   width: 80%;
+   font-weight: 700;
+   border: solid fuchsia 0px;
+   margin: 2rem auto;
+}
+
+.btn_join:hover {
+   outline: solid white 2px;
+}
+
+.btn {
+   display: block;
+   color: black;
+   background-color: fuchsia;
+   width: 100%;
+   text-decoration: none;
+   padding: 2rem;
+   font-size: 4rem;
+   font-family: var(--movies-title-font);
+}
+
+.submitted_text {
+   text-align: center;
+   color: white;
+   font-size: 1.5rem;
+   margin: 1rem 0 7rem;
+}
+
+/* <!-- Footer, Menu Contact, Buy tickets, Copyright --> */
+
+.footer_info {
+   background-color: var(--primary-bg-color);
+   color: white;
+}
+
+.footer_info_group {
+   width: 90%;
+   padding: 3rem 0;
+   margin: auto;
+   border-bottom: solid white 2px;
+   text-align: center;
+}
+
+.oceandrive_footer {
+   margin-bottom: 4rem;
+}
+
+.oceandrive_heading_bottom {
+   margin-bottom: 2rem;
+   padding: 1rem 0;
+   font-family: var(--main-logo-font);
+}
+
+/* <!-- Quick menu and contacts --> */
+
+.menu_contact {
+   justify-content: space-between;
+   height: 100%;
+}
+
+.quick_menu_heading {
+   margin-bottom: 2rem;
+   padding: 1rem;
+}
+
+.contact_bottom_heading {
+   margin-bottom: 2rem;
+   padding: 1rem;
+}
+
+.quick_menu_list {
+   margin: -1.5rem 0 4rem;
+}
+
+.quick_menu_list_item {
+   margin: 0.5rem;
+   /* padding: 0; */
+}
+
+.quick_menu_list_item a {
+   font-size: 2rem;
+   text-decoration: none;
+   font-weight: 400;
+   padding: 0.1rem 0;
+   color: white;
+}
+
+.quick_menu_list_item a:hover {
+   border-bottom: solid white 2px;
+}
+
+.contact_bottom_item {
+   font-size: 1.8rem;
+   margin: 1rem;
+}
+
+.contact_bottom_list {
+   margin-top: -1.5rem;
+}
+
+.buy_tickets_bottom {
+   margin-top: 4rem;
+}
+
+/* <!-- Buy ticket button for phones --> */
+
+.buy_tickets_bottom_btn_one {
+   background-color: var(--primary-bg-color);
+   border: solid white 1px;
+   padding: 0 0.5rem;
+   color: white;
+   display: flex;
+   margin: 3rem auto;
+}
+
+.buy_tickets_bottom_btn_two:hover,
+.buy_tickets_bottom_btn_one:hover {
+   outline: solid white 2px;
+}
+
+.buy_tickets_bottom_btn_one a {
+   font-size: 2rem;
+   text-decoration: none;
+   padding: 1.5rem 2rem;
+   color: fuchsia;
+}
+
+/* <!-- Buy ticket button for laptop/pc --> */
+
+.buy_tickets_bottom_btn_two {
+   display: none;
+}
+
+.social_icons_bottom a i {
+   margin-left: 1.5rem;
+   color: white;
+}
+
+.copyright {
+   width: 90%;
+   margin: 3rem auto 0;
+   padding-bottom: 3rem;
+   text-align: center;
+}
+
+#js_top_btn {
+   display: none;
+   position: fixed;
+   /* Fixed/sticky position */
+   bottom: 20px;
+   right: 30px;
+   z-index: 99;
+   border: solid black 1px;
+   outline: none;
+   background-color: fuchsia;
+   color: white;
+   cursor: pointer;
+   padding: 15px;
+   border-radius: 1px;
+   font-size: 18px;
+}
+
+#js_top_btn:hover {
+   background-color: #555;
+}
+
+/* Big devices */
+
+@media only screen and (min-width: 768px) {
+   .logo {
+      max-width: 750px;
+   }
+   .logo a {
+      font-size: calc(1.9rem + 1vw);
+   }
+   /* <!-- Menu bar icon for phones --> */
+   .menu_group {
+      display: none;
+   }
+   .menu_item_big {
+      display: flex;
+   }
+   .menu_item_big_item {
+      border-bottom: none;
+      width: auto;
+      background-color: none;
+      padding: 1.5rem 0 1.5rem 1.5rem;
+   }
+   .menu_item_big_item a {
+      font-size: calc(1.5rem + 0.1vw);
+      text-decoration: none;
+      font-weight: bold;
+      text-shadow: pink 0px 0px 10px;
+      color: white;
+      padding: 1.2rem 0;
+   }
+   .menu_item_big_item:nth-child(4) {
+      padding-right: 0rem;
+   }
+   .menu_item_big_item:nth-child(1) {
+      padding-left: 0rem;
+   }
+   .social_login_group {
+      height: 12vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: calc(1.5rem + 0.1vw);
+      color: white;
+   }
+   .social_icon {
+      margin-left: 1.5rem;
+   }
+   .social_icon:first-child {
+      margin-left: 0;
+   }
+   .social_icon a i {
+      color: white;
+   }
+   .login_account_big {
+      margin-right: 3rem;
+   }
+   .main_heading {
+      max-width: 850px;
+      font-size: calc(5.5rem + 1vw);
+      color: white;
+      font-weight: 900;
+      margin-top: 5rem;
+      text-shadow: pink 0px 0px 5px;
+      text-align: left;
+   }
+   .main_description {
+      color: white;
+      font-size: calc(0.8rem + 1vw);
+      max-width: 500px;
+      text-align: justify;
+      margin-top: 5rem;
+   }
+   .buy_tickets {
+      margin-top: 7rem;
+      border: none;
+      margin: 4rem 0;
+      border: solid white 1px;
+   }
+   .movie_poster {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+   }
+   .movie_poster_item {
+      margin: 4rem 1.4rem;
+   }
+   .movie_poster_item:first-child {
+      margin-left: 0;
+   }
+   .movie_poster_item:last-child {
+      margin-right: 0;
+   }
+   .movie_poster_heading {
+      font-weight: 700;
+      font-size: calc(0.8rem + 1vw);
+      margin-top: 1rem;
+      color: white;
+   }
+   .movie_poster_genre {
+      font-size: calc(0.6rem + 1vw);
+      color: thistle;
+   }
+   /* <!-- Coming Soon and Trailers --> */
+   .coming_soon_item {
+      display: flex;
+      justify-content: center;
+   }
+   .coming_soon_subitem {
+      display: flex;
+      flex-flow: column;
+      /* justify-content: center; */
+      align-items: center;
+      width: calc((100% / 3) * 1);
+      border: solid white 1px;
+      color: white;
+      padding: 3rem 1rem;
+   }
+   .coming_soon_genre {
+      background-color: rgb(61, 26, 141);
+      color: rgb(253, 71, 214);
+      border-radius: 10px;
+      padding: 1rem;
+      font-size: calc(1rem + 0.5vw);
+      margin: 2rem 0 1rem;
+   }
+   .coming_soon_title {
+      text-align: center;
+      font-size: calc(2rem + 0.5vw);
+      padding: 1rem;
+   }
+   .trailer_text {
+      padding: 1rem;
+      font-size: calc(1.2rem + 0.5vw);
+      color: white;
+   }
+   .step_card {
+      width: calc((100% / 4) * 1);
+   }
+   .step_card:nth-child(3),
+   .step_card:nth-child(4) {
+      margin-top: 0rem;
+   }
+   .step_card_text {
+      font-size: calc(1.2rem + 0.3vw);
+      padding: 1.5rem;
+      text-align: center;
+   }
+   .ticket_price_group {
+      width: 900px;
+   }
+   .ticket_price_text {
+      height: 120px;
+      font-size: calc(2.4rem + 0.2vw);
+      text-align: center;
+      line-height: 100px;
+      font-weight: 700;
+      background-color: rgb(215, 0, 235);
+   }
+   .dash_line_top {
+      position: absolute;
+      top: -20px;
+      left: 5%;
+      width: 90%;
+      border-bottom: dashed black 3px;
+   }
+   .dash_line_bottom {
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      width: 90%;
+      border-bottom: dashed black 3px;
+   }
+   .group_age {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(215, 0, 235);
+   }
+   .ages_price {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(215, 0, 235);
+      margin: auto;
+   }
+   .ages_price_1st,
+   .ages_price_2nd,
+   .ages_price_3rd {
+      width: 100% / 3;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      margin-top: -2rem;
+   }
+   .ages_price_3rd {
+      margin-bottom: 0rem;
+   }
+   .admissions,
+   .children,
+   .under_five {
+      height: 120px;
+      font-size: calc(2.5rem + 0.3vw);
+      text-align: center;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      /* width: 70%; */
+      font-weight: 600;
+   }
+   .price_1st,
+   .price_2nd,
+   .price_3rd {
+      font-size: calc(3.5rem + 1.2vw);
+      font-weight: 900;
+      margin-top: 0rem;
+      margin-bottom: 2rem;
+   }
+   .snacks_drinks {
+      max-width: 90%;
+      background-color: #1656df;
+      margin: -5rem auto;
+      height: calc(600px + 10vw);
+   }
+   .snacks_drinks_group {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      max-width: calc(750px + 24vw);
+      margin: -8rem auto;
+      text-align: center;
+      color: white;
+      background-color: #1656df;
+      padding: 2rem 2rem;
+      height: calc(600px + 10vw);
+   }
+   .cone_img {
+      display: block;
+      max-height: calc(250px + 25vw);
+      width: auto;
+      max-width: 100%;
+      margin-top: calc(-3rem + 10vw);
+   }
+   .snacks_group {
+      margin-top: 2rem;
+   }
+   .snacks_drinks_heading {
+      font-size: calc(1.2rem + 0.7vw);
+      margin-bottom: 2rem;
+   }
+   .snacks_drinks_dashed {
+      height: auto;
+      border-bottom: dashed white 3px;
+      margin: auto;
+      width: 65%;
+   }
+   .snacks_drinks_item {
+      font-size: calc(1.9rem + 1.1vw);
+      font-weight: 900;
+      padding: 0.5rem 0;
+   }
+   .snacks,
+   .icecream_img,
+   .drinks {
+      margin-top: 7rem;
+   }
+   .stay_update {
+      width: calc(350px + 35vw);
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem auto 0;
+      color: white;
+   }
+   .stay_update_heading {
+      margin: 15rem 0 2rem;
+      font-size: 3rem;
+   }
+   .submitted_text {
+      text-align: center;
+      color: white;
+      font-size: 1.5rem;
+      margin: 1rem 0 20rem;
+   }
+   /* <!-- Footer, Menu Contact, Buy tickets, Copyright --> */
+   .footer_info_group {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+   }
+   .oceandrive_footer {
+      width: 25%;
+   }
+   .quick_menu_list_item a,
+   .contact_bottom_item {
+      font-size: calc(1.4rem + 0.3vw);
+   }
+   .menu_contact {
+      display: flex;
+      justify-content: space-evenly;
+      width: 50%;
+   }
+   .buy_tickets_bottom {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      margin-top: 0rem;
+   }
+   .buy_tickets_bottom_btn_one {
+      display: none;
+   }
+   .buy_tickets_bottom_btn_two {
+      display: block;
+      border: none;
+   }
+   .buy_tickets_bottom_btn_two_text {
+      background-color: var(--primary-bg-color);
+      border: solid white 1px;
+      padding: 1.5rem 0;
+      color: white;
+      display: flex;
+   }
+   .buy_tickets_bottom_btn_two a {
+      font-size: 2rem;
+      text-decoration: none;
+      padding: 1.5rem 2rem;
+   }
+}
