@@ -276,6 +276,10 @@ body {
    color: white;
 }
 
+.fab:hover,
+.fas:hover {
+   color: fuchsia;
+}
 .main_text {
    height: 83vh;
    margin-top: 6rem;
@@ -337,7 +341,7 @@ main {
 
 .now_playing_text {
    height: 9rem;
-   line-height: 9vh;
+   line-height: 9rem;
    border-bottom: solid white 1px;
    color: white;
    font-weight: 700;

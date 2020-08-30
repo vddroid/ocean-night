@@ -81,7 +81,7 @@ version history: [location of file]
 
 body {
    font: 62.5%/1.5 Montserrat, Roboto, Lato, Tahoma, sans-serif;
-   color: #000000;
+   color: white;
    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       var(--image-url);
    background-size: 100% 40%;
@@ -263,6 +263,11 @@ header {
    color: white;
 }
 
+.fab:hover,
+.fas:hover {
+   color: fuchsia;
+}
+
 .login_account_small {
    position: absolute;
    top: 3%;
@@ -275,156 +280,70 @@ header {
    left: 16%;
 }
 
-.now_playing_text {
+.grab_bite_text {
    text-align: center;
-   padding: 3rem;
+   padding: 0 0 3rem;
    font-family: var(--movies-title-font);
    background-color: var(--primary-bg-color);
 }
 
-/* <!-- Showtimes and prices --> */
+/* <!-- Snack bar description --> */
 
-.showtimes-prices {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   width: 100%;
+#snack-desc {
+   background-color: var(--secondary-bg-color);
    margin: 3.5rem 0;
 }
 
-.showtimes,
-.prices {
-   width: 90%;
-}
-
-.showtimes {
-   margin-top: 7rem;
-}
-
-#showtimes_prices_breakline {
-   width: 100%;
-   border-top: solid fuchsia 1px;
-   margin-top: 5rem;
-}
-
-.prices {
-   margin-top: 7rem;
-}
-
-.showtimes_text {
-   position: relative;
-   top: -3rem;
-   text-align: center;
-   font-size: 2.5rem;
-   color: fuchsia;
-}
-
-.prices_text {
-   position: relative;
-   top: -2.5rem;
-   text-align: center;
-   font-size: 2.5rem;
-   color: fuchsia;
-}
-
-.showtime_text_1st,
-.showtime_text_2nd {
-   border: solid fuchsia 2px;
-   text-align: center;
-   font-size: 6rem;
-   padding: 1rem 2rem;
-   font-family: var(--movies-title-font);
-}
-
-.showtime_text_1st {
-   border-bottom: none;
-}
-
-.prices_general,
-.prices_children,
-.prices_under {
-   text-align: center;
-   font-size: 1.9rem;
-   padding: 1rem;
-}
-
-/* <!-- Movies showtimes weekly list --> */
-
-.weekly_list {
-   width: 90%;
-   border: solid fuchsia 2px;
-   margin: 4rem auto;
-}
-
-.list_item {
-   border-bottom: solid fuchsia 2px;
-   padding: 1rem 0 2rem;
-   width: 90%;
-   margin: 0 auto 1rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-}
-
-.list_item:last-child {
-   border: none;
-}
-
-.item_date_days {
-   display: flex;
-   padding: 1rem 0;
-   margin-bottom: 1rem;
-}
-
-.date_text {
-   display: flex;
-   height: 5vh;
-   font-size: 4rem;
-   line-height: 5vh;
-   text-align: center;
-}
-
-.item_day_month {
-   display: flex;
-   flex-direction: column;
-   text-align: center;
-   align-items: center;
-   justify-content: center;
-   height: 5vh;
-   margin-left: 1.5rem;
-}
-
-.day_text,
-.month_text {
-   font-size: 1.4rem;
-}
-
-.showtime_group_small {
-   display: flex;
-}
-
-.fa-chevron-down {
-   margin-left: 1rem;
-}
-
-.showtime_group_big {
-   display: none;
-}
-
-.buy_tickets_weekly {
-   border: none;
-   margin-top: 3rem;
-}
-
-.buy_tickets_weekly a {
-   height: 4vh;
-   font-size: 2rem;
-   color: black;
-   background-color: fuchsia;
-   border: none;
+.snack_para {
    display: block;
-   text-decoration: none;
-   line-height: 4vh;
+   max-width: 900px;
+   margin: auto;
+   padding: 4rem 4rem;
+   line-height: 3rem;
+   font-size: 1.5rem;
+   text-align: center;
+}
+
+/* <!-- snacks section --> */
+
+.snacks_group {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+}
+
+.snacks,
+.hotfood,
+.drinks {
+   border-top: solid fuchsia 2px;
+   padding: 4rem;
+   text-align: center;
+   margin: auto;
+   width: 100%;
+}
+
+.drinks {
+   border-bottom: solid fuchsia 2px;
+}
+
+.snack_text {
+   font-size: 3rem;
+   margin-bottom: 0.5rem;
+   color: fuchsia;
+   font-weight: 900;
+   padding-bottom: 1rem;
+}
+
+.snack_item {
+   font-size: 2rem;
+}
+
+#popcorn-img {
+   display: block;
+   width: 33rem;
+   height: 40rem;
+   margin: -6rem auto 0;
 }
 
 /* <!-- Footer, Menu Contact, Buy tickets, Copyright --> */
@@ -580,7 +499,6 @@ header {
    }
    .menu_item_big {
       display: flex;
-      width: auto;
    }
    .menu_item_big_item {
       border-bottom: none;
@@ -652,124 +570,43 @@ header {
       color: white;
    }
    .login_account_big {
-      margin-right: 2rem;
+      margin-right: 3rem;
    }
-   .now_playing_text {
+   .contact_us_text {
       padding-top: 0;
       font-size: calc(4rem + 0.1vw);
    }
-   /* <!-- Showtimes and prices --> */
-   .showtimes-prices {
-      max-width: 90%;
+   .grab_bite_text {
+      font-size: calc(4rem + 0.1vw);
+   }
+   /* <!-- snacks section --> */
+   .snacks_group {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      margin: auto;
+   }
+   .snacks,
+   .hotfood,
+   .drinks {
       border: solid fuchsia 2px;
-      margin: 8.5rem auto;
-      display: flex;
-      /* height: 30vh; */
-      justify-content: space-evenly;
-   }
-   .showtimes {
-      height: 20vh;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      width: auto;
-   }
-   .prices {
-      height: 20vh;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      width: auto;
-   }
-   .prices_c {
-      height: 150px;
-   }
-   .showtimes_c {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      height: 150px;
-   }
-   #showtimes_prices_breakline {
-      display: initial;
-      border: none;
-      border-left: 3px solid fuchsia;
-      width: 0;
-      position: relative;
-      margin-top: 0;
-   }
-   .showtimes,
-   .prices {
-      max-width: 35rem;
-   }
-   .showtimes_text {
-      position: initial;
       text-align: left;
-      margin-bottom: 2rem;
-      width: 100%;
+      height: 290px;
    }
-   .prices_text {
-      position: initial;
-      text-align: left;
-      margin-bottom: 2rem;
+   .snacks_c {
+      width: 170px;
+      margin: auto;
    }
-   .showtime_text_1st,
-   .showtime_text_2nd {
-      border: solid fuchsia 1px;
-      text-align: center;
-      font-size: calc(2.5rem + 1.2vw);
-      padding: 0;
-      font-family: var(--movies-title-font);
-      line-height: 75px;
-      width: 50%;
+   .hotfood,
+   .snacks {
+      border-right: none;
    }
-   .showtime_text_1st {
-      border-bottom: solid fuchsia 1px;
+   .snack_item {
+      font-size: 2rem;
    }
-   .prices_general,
-   .prices_children,
-   .prices_under {
-      text-align: left;
-      font-size: 1.9rem;
-      padding: 0.5rem 0;
-   }
-   /* <!-- Movies showtimes weekly list --> */
-   .list_item {
-      padding: 2rem 0;
-      margin: 1rem auto;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
-   }
-   .title_time_group {
-      flex: 0.9;
-   }
-   .title_time {
-      display: flex;
-      padding: 0 2.5rem;
-   }
-   .item_date_days {
-      width: auto;
-      display: flex;
-      margin: 0;
-      padding: 0;
-   }
-   .showtime_group_small {
-      display: none;
-   }
-   .showtime_group_big {
-      display: initial;
-      margin-left: 1rem;
-   }
-   .buy_tickets_weekly {
-      border: none;
-      margin-top: 0rem;
-      flex: 0.25;
-      max-width: 150px;
-      margin-left: auto;
-   }
-   .buy_tickets_weekly a {
-      max-width: 150px;
-      font-size: 1.8rem;
-      margin-left: auto;
+   #popcorn-img {
+      width: calc(31rem + 5vw);
+      height: calc(38rem + 5vw);
    }
    /* <!-- Footer, Menu Contact, Buy tickets, Copyright --> */
    .footer_info_group {
