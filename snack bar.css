@@ -282,7 +282,7 @@ header {
 
 .grab_bite_text {
    text-align: center;
-   padding: 0 0 3rem;
+   padding: 3rem;
    font-family: var(--movies-title-font);
    background-color: var(--primary-bg-color);
 }
@@ -577,6 +577,7 @@ header {
       font-size: calc(4rem + 0.1vw);
    }
    .grab_bite_text {
+      padding-top: 0;
       font-size: calc(4rem + 0.1vw);
    }
    /* <!-- snacks section --> */
