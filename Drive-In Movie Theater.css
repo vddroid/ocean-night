@@ -304,7 +304,7 @@ html, body {
    outline: solid white 2px;
 }
 
-.buy_tickets:active, .showtimes:active, .coming_soon_trailer:active, .view_all_snacks_text:active, .btn_join:active, .buy_tickets_bottom_btn_one:active, .buy_tickets_bottom_btn_two:active, #js_top_btn:active, .fab:active, .fas:active, .movie_poster_img:active {
+.buy_tickets:active, .showtimes:active, .coming_soon_trailer:active, .view_all_snacks_text:active, .btn_join:active, .buy_tickets_bottom_btn_one:active, .buy_tickets_bottom_btn_two:active, #js_top_btn:active, .fab:active, .fas:active, .movie_poster_item:active {
    transform: scale(0.96);
 }
 
