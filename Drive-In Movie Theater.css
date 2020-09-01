@@ -63,7 +63,7 @@ version history: [location of file]
    --main-logo-font: Sonsie One;
    --movies-title-font: Carter One;
    --primary-bg-color: #313cb8;
-   --secondary-bg-color: rgb(17, 17, 90);
+   --secondary-bg-color: #11115a;
 }
 
 .clear {
@@ -139,7 +139,7 @@ html, body {
 .menu_item_small {
    width: 100%;
    height: 100vh;
-   background-color: rgb(17, 17, 90);
+   background-color: #11115a;
    box-shadow: black 2px 2px 3px;
    position: fixed;
    top: 0;
@@ -212,12 +212,12 @@ html, body {
 
 @keyframes neon {
    0%, 100% {
-      text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16, 0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw rgb(143, 0, 143);
+      text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16, 0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #8f008f;
       color: fuchsia;
    }
    50% {
       text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b, 0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
-      color: rgb(143, 0, 143);
+      color: #8f008f;
    }
 }
 
@@ -426,8 +426,8 @@ main {
 }
 
 .coming_soon_genre {
-   background-color: rgb(61, 26, 141);
-   color: rgb(253, 71, 214);
+   background-color: #3d1a8d;
+   color: #fd47d6;
    border-radius: 10px;
    padding: 1rem;
    font-size: calc(1.6rem + 0.5vw);
@@ -481,7 +481,7 @@ main {
 
 .steps_heading {
    font-size: 4rem;
-   color: rgb(242, 143, 255);
+   color: #f28fff;
    font-family: var(--movies-title-font);
 }
 
@@ -557,12 +557,12 @@ main {
    text-align: center;
    line-height: 120px;
    font-weight: 700;
-   background-color: rgb(215, 0, 235);
+   background-color: #d700eb;
 }
 
 .ticket_price_heading {
    width: 100%;
-   background-color: rgb(215, 0, 235);
+   background-color: #d700eb;
 }
 
 .dash_line_top, .dash_line_bottom {
@@ -574,11 +574,11 @@ main {
 
 .group_age {
    width: 100%;
-   background-color: rgb(215, 0, 235);
+   background-color: #d700eb;
 }
 
 .ticket_price_heading, .prices, .ticket_torn {
-   background-color: rgb(215, 0, 235);
+   background-color: #d700eb;
    color: black;
 }
 
@@ -586,7 +586,7 @@ main {
    width: 100%;
    justify-content: center;
    align-items: center;
-   background-color: rgb(215, 0, 235);
+   background-color: #d700eb;
    margin: auto;
 }
 
@@ -627,7 +627,7 @@ main {
 #Layer_2 {
    height: auto;
    width: 100%;
-   fill: rgb(215, 0, 235);
+   fill: #d700eb;
 }
 
 /* <!-- Snacks and drinks --> */
@@ -1044,8 +1044,8 @@ main {
       padding: 3rem 1rem;
    }
    .coming_soon_genre {
-      background-color: rgb(61, 26, 141);
-      color: rgb(253, 71, 214);
+      background-color: #3d1a8d;
+      color: #fd47d6;
       border-radius: 10px;
       padding: 1rem;
       font-size: calc(1rem + 0.5vw);
@@ -1081,7 +1081,7 @@ main {
       text-align: center;
       line-height: 100px;
       font-weight: 700;
-      background-color: rgb(215, 0, 235);
+      background-color: #d700eb;
    }
    .dash_line_top {
       position: absolute;
@@ -1102,14 +1102,14 @@ main {
       width: 100%;
       display: flex;
       flex-direction: row;
-      background-color: rgb(215, 0, 235);
+      background-color: #d700eb;
    }
    .ages_price {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgb(215, 0, 235);
+      background-color: #d700eb;
       margin: auto;
    }
    .ages_price_1st, .ages_price_2nd, .ages_price_3rd {

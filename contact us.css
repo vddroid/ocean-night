@@ -63,7 +63,7 @@ version history: [location of file]
    --main-logo-font: Sonsie One;
    --movies-title-font: Carter One;
    --primary-bg-color: #313cb8;
-   --secondary-bg-color: rgb(17, 17, 90);
+   --secondary-bg-color: #11115a;
 }
 
 .clear {
@@ -146,7 +146,7 @@ header {
 .menu_item_small {
    width: 100%;
    height: 100vh;
-   background-color: rgb(17, 17, 90);
+   background-color: #11115a;
    box-shadow: black 2px 2px 3px;
    position: fixed;
    top: 0;
@@ -215,12 +215,12 @@ header {
 
 @keyframes neon {
    0%, 100% {
-      text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16, 0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw rgb(143, 0, 143);
+      text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16, 0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #8f008f;
       color: fuchsia;
    }
    50% {
       text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b, 0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
-      color: rgb(143, 0, 143);
+      color: #8f008f;
    }
 }
 
