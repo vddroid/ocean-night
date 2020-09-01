@@ -51,8 +51,7 @@ version history: [location of file]
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: Montserrat, Roboto, Lato, Carter One, Sonsie One, Tahoma,
-      sans-serif;
+   font-family: Montserrat, Roboto, Lato, Carter One, Sonsie One, Tahoma, sans-serif;
 }
 
 @font-face {
@@ -82,8 +81,7 @@ version history: [location of file]
 body {
    font: 62.5%/1.5 Montserrat, Roboto, Lato, Tahoma, sans-serif;
    color: white;
-   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      var(--image-url);
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--image-url);
    background-size: 100% 40%;
 }
 
@@ -111,16 +109,14 @@ p {
    font-size: 1.4rem;
 }
 
-ul,
-li {
+ul, li {
    text-decoration: none;
    list-style: none;
 }
 
 /* <!-- Header, Logo, Nav, Social Login, Main text --> */
 
-html,
-body {
+html, body {
    width: 100%;
    background-color: var(--secondary-bg-color);
 }
@@ -218,23 +214,17 @@ header {
 }
 
 @keyframes neon {
-   0%,
-   100% {
-      text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
-         0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw rgb(143, 0, 143);
+   0%, 100% {
+      text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16, 0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw rgb(143, 0, 143);
       color: fuchsia;
    }
    50% {
-      text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
-         0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
+      text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b, 0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
       color: rgb(143, 0, 143);
    }
 }
 
-.fa-bars,
-.fa-user-circle,
-.fa-chevron-down,
-.fa-times-circle {
+.fa-bars, .fa-user-circle, .fa-chevron-down, .fa-times-circle {
    color: white;
 }
 
@@ -244,16 +234,12 @@ header {
    display: none;
 }
 
-.social_icon,
-.login_account_small,
-.login_dropdown_small {
+.social_icon, .login_account_small, .login_dropdown_small {
    font-size: calc(1.5rem + 0.1vw);
    color: white;
 }
 
-.social_nav a,
-.login_account_small a,
-.login_dropdown_small {
+.social_nav a, .login_account_small a, .login_dropdown_small {
    color: white;
 }
 
@@ -263,8 +249,7 @@ header {
    color: white;
 }
 
-.fab:hover,
-.fas:hover {
+.fab:hover, .fas:hover {
    color: fuchsia;
 }
 
@@ -313,9 +298,7 @@ header {
    width: 100%;
 }
 
-.snacks,
-.hotfood,
-.drinks {
+.snacks, .hotfood, .drinks {
    border-top: solid fuchsia 2px;
    padding: 4rem;
    text-align: center;
@@ -422,6 +405,10 @@ header {
    margin-top: 4rem;
 }
 
+.buy_tickets:active, .showtimes:active, .coming_soon_trailer:active, .view_all_snacks_text:active, .btn_join:active, .buy_tickets_bottom_btn_one:active, .buy_tickets_bottom_btn_two:active, #js_top_btn:active, .fab:active, .fas:active, .movie_poster_item:active {
+   transform: scale(0.96);
+}
+
 /* <!-- Buy ticket button for phones --> */
 
 .buy_tickets_bottom_btn_one {
@@ -433,8 +420,7 @@ header {
    margin: 3rem auto;
 }
 
-.buy_tickets_bottom_btn_two:hover,
-.buy_tickets_bottom_btn_one:hover {
+.buy_tickets_bottom_btn_two:hover, .buy_tickets_bottom_btn_one:hover {
    outline: solid white 2px;
 }
 
@@ -587,9 +573,7 @@ header {
       width: 90%;
       margin: auto;
    }
-   .snacks,
-   .hotfood,
-   .drinks {
+   .snacks, .hotfood, .drinks {
       border: solid fuchsia 2px;
       text-align: left;
       height: 290px;
@@ -598,8 +582,7 @@ header {
       width: 170px;
       margin: auto;
    }
-   .hotfood,
-   .snacks {
+   .hotfood, .snacks {
       border-right: none;
    }
    .snack_item {
@@ -618,8 +601,7 @@ header {
    .oceandrive_footer {
       width: 25%;
    }
-   .quick_menu_list_item a,
-   .contact_bottom_item {
+   .quick_menu_list_item a, .contact_bottom_item {
       font-size: calc(1.4rem + 0.3vw);
    }
    .menu_contact {
